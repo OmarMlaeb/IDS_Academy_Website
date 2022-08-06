@@ -1,9 +1,11 @@
 import React from 'react'
-import Head from './Head'
+
+import Head from './Head';
+import './header.css';
 
 const header = () => {
     return (
-        <div>
+        <div>  
             <Head/>
         </div>
     )
