@@ -1,13 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
+import logo from '../../../images/ids_logo.png';
 
 const Head = () => {
     return (
         <div>
             <section className='head'>
-                <div className='container flexSB'>
+                <div className='container-head flexSB'>
                     <div className='logo'>
-                        <h1>IDS ACADEMY</h1>
-                        <span>Internship Program</span>
+                        <Link to='/'>
+                            <img src={logo} alt=""/>
+                        </Link>
                     </div>
 
                     <div className='social'>
