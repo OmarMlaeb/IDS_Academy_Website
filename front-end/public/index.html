@@ -34,54 +34,5 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     
-    <!-- Fixed Header-->
-    <header>
-      <div class="container">
-        <div class="main-head">
-          <nav className='nav'>
-            <ul>
-                <li class="links"> <a href="#home">Home</a> </li>
-                <li class="links"> <a href="#about">About IDS</a> </li>
-                <li class="links"> <a href="#program">Internship Program</a> </li>
-                <li class="links"> <a href="#learn">Learning Hub</a> </li>
-                <li class="links"> <a href="#team">Meet our Team </a> </li>
-                <li class="links"> <a href="#contact">Contact Us</a> </li>
-            </ul>
-        </nav>
-        </div>
-      </div>
-  </header>
-  <section class="sectionHead" id="home">
-    <h1>HOME</h1>
-  </section>
-  <section class="sectionHead" id="about">
-    <h1>About IDS</h1>
-  </section>
-  <section class="sectionHead" id="program">
-    <h1>Internship Program</h1>
-  </section>
-  <section class="sectionHead" id="learn">
-    <h1>Learning Hub</h1>
-  </section>
-  <section class="sectionHead" id="team">
-    <h1>Meet our Team</h1>
-  </section>
-  <section class="sectionHead" id="contact">
-    <h1>Contact Us</h1>
-  </section>
-  <script>
-    const li = document.querySelectorAll(".links");
-    const sec = document.querySelectorAll("section");
-
-    function activeMenu(){
-      let len = sec.length;
-      while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-      li.forEach(ltx => ltx.classList.remove("active"));
-      li[len].classList.add('active');
-    }
-    activeMenu();
-    window.addEventListener("scroll", activeMenu);
-  </script>
-
   </body>
 </html>
