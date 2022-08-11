@@ -11,7 +11,6 @@ const App = () => {
     <div>
       <Router>
         <Header/>
-        <Home/>
         <Switch>
           <Route path='/' exact component={Home} />
           {/*<Route path='/about' exact component={About} />
