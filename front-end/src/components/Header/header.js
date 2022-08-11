@@ -27,10 +27,22 @@ const header = () => {
                 <nav className='navbar'>
                     <ul>
                         <li className='nav-item'>
-                            <a href='/'>Home</a>
+                            <Link to='/' spy={true} smooth={true} offset={50} duration={500}>Home</Link>
                         </li>
                         <li className='nav-item'>
-                            <a href='#about'>About</a>
+                            <Link to='/about' spy={true} smooth={true} offset={50} duration={500}>About IDS</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/program' spy={true} smooth={true} offset={50} duration={500}>Internship Program</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/learn' spy={true} smooth={true} offset={50} duration={500}>Learning Hub</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/team' spy={true} smooth={true} offset={50} duration={500}>Meet our Team</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/contact' spy={true} smooth={true} offset={50} duration={500}>Contact Us</Link>
                         </li>
                     </ul>
                 </nav>
