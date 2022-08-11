@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-import Head from './Head';
+import logo from '../images/ids_logo.png';
 import './header.css';
-import { Link } from 'react-scroll';
+
+import { Link } from 'react-scroll'
 
 const Header = () => {
 
@@ -12,8 +13,22 @@ const Header = () => {
 
     return (
         <div>  
-            <Head/>
-            <header>
+            <section className='head'>
+                <div className='container-head flexSB'>
+                    <div className='logo'>
+                        <Link to='/'>
+                            <img src={logo} alt=""/>
+                        </Link>
+                    </div>
+
+                    <div className='social'>
+                        <i className="fa-brands fa-square-facebook icon"></i>
+                        <i className='fa-brands fa-square-instagram icon'></i>
+                        <i className='fa-brands fa-linkedin icon'></i>
+                    </div>
+                </div>
+            </section>
+            <div className='header'>
                 <div class="container">
                     <div class="main-head">
                         <nav className='nav'>
@@ -28,7 +43,7 @@ const Header = () => {
                         </nav>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
     )
 }

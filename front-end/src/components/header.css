@@ -15,7 +15,7 @@
     margin-top: 10px;
 }
 
-header{
+.header{
     background: #E0E0E0;
     position: sticky;
     padding-top: 10px;
@@ -32,12 +32,12 @@ header{
     align-items: center; 
 }
 
-header ul{
+.header ul{
     display: flex;
     list-style: none;
 }
 
-header nav li {
+.header nav li {
     display: inline-block;
     border: none;
     transition: all linear 0.5s;
@@ -45,7 +45,7 @@ header nav li {
     margin-left: 80px;
 }
 
-header nav li a {
+.header nav li a {
     text-decoration: none;
     color: #757575;
     font-weight: 500;
