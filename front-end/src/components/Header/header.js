@@ -39,7 +39,7 @@ const Header = () => {
                     </div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className='nav-item'>
-                            <Link to='/' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link>
+                            <Link to='home' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Home</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to='/about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About IDS</Link>
