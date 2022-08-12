@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import logo from './../../images/ids_logo.png';
 
 import './header.css';
 import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa'
 
-const header = () => {
+const Header = () => {
+
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
+
     return (
         <div>
             <div className='head'>
@@ -25,24 +32,29 @@ const header = () => {
             </div>
             <div className='header'>
                 <nav className='navbar'>
-                    <ul>
+                    <div className='menubar' onClick={handleClick}>
+                        {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                            : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+                    </div>
+                    <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className='nav-item'>
-                            <Link to='/' spy={true} smooth={true} offset={50} duration={500}>Home</Link>
+                            <Link to='/' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' spy={true} smooth={true} offset={50} duration={500}>About IDS</Link>
+                            <Link to='/about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About IDS</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/program' spy={true} smooth={true} offset={50} duration={500}>Internship Program</Link>
+                            <Link to='/program' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Internship Program</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/learn' spy={true} smooth={true} offset={50} duration={500}>Learning Hub</Link>
+                            <Link to='/learn' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Learning Hub</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/team' spy={true} smooth={true} offset={50} duration={500}>Meet our Team</Link>
+                            <Link to='/team' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Meet our Team</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' spy={true} smooth={true} offset={50} duration={500}>Contact Us</Link>
+                            <Link to='/contact' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Contact Us</Link>
                         </li>
                     </ul>
                 </nav>
@@ -51,4 +63,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header

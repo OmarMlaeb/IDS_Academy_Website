@@ -87,7 +87,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
+    width: 100%;
     transition: all linear 0.5s;
     height: 100%;
     padding: 0 1rem;
@@ -98,13 +98,14 @@
     text-decoration: none;
     color: #757575;
     font-weight: 500;
-    margin-right: 180px;
+    margin-right: 70px;
     display: inline-block;
     border: none;
     transition: all linear 0.5s;
     align-items: center;
     padding-top: 5px;
-    margin-left: -100px;
+    margin-left: 50px;
+    white-space: nowrap
 }
 
 .header .nav-menu {
@@ -131,4 +132,51 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: -10px;
+}
+
+.menubar {
+    display: none;
+}
+
+
+@media screen and (max-width:1200px) {
+    .header {
+        max-width: 100%;
+        background-color: #E0E0E0;
+    }
+
+    .header .navbar {
+        max-width: 100%;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 90px;
+        flex-direction: column;
+        background-color: #E0E0E0;
+        width: 100%;
+        height: 90vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+        margin-top: 30px;
+        left: -100%;
+        display: inline-block;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
+    }
 }
