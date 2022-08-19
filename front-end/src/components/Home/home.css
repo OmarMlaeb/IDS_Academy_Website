@@ -61,7 +61,8 @@
     font-weight: 500;
     border: #29B6F6;
     border-radius: 5px;
-    font-size: 26px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .img_container {
@@ -128,4 +129,5 @@
     margin-top: 40px;
     border: #F1F8E9;
     background-color: #F1F8E9;
+    cursor: pointer;
 }
