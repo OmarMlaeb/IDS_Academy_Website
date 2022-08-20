@@ -88,7 +88,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    transition: all linear 0.5s;
+    transition: all linear 0.2s;
     height: 100%;
     padding: 0 1rem;
     margin: auto;
@@ -101,11 +101,11 @@
     margin-right: 70px;
     display: inline-block;
     border: none;
-    transition: all linear 0.5s;
+    transition: all linear 0.2s;
     align-items: center;
     padding-top: 5px;
     margin-left: 50px;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .header .nav-menu {
