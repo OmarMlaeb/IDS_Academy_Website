@@ -37,7 +37,7 @@ const About = () => {
 
                     <div className='box'>
                         <i className="fa-solid fa-list-check icon2"></i>
-                        <h3 className='title'>Projects</h3>
+                        <h3 className='title'>Completed Projects</h3>
                         <span className='counter'>
                             {counterOn && <CountUp start={0} end={1200} duration={1.5} delay={0}/>}
                             +
