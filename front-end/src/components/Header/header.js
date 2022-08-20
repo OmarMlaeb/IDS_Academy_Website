@@ -48,10 +48,10 @@ const Header = () => {
                             <Link to='program' spy={true} smooth={true} offset={-120} duration={200} onClick={closeMenu}>Internship Program</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='team' spy={true} smooth={true} offset={50} duration={200} onClick={closeMenu}>Meet our Team</Link>
+                            <Link to='team' spy={true} smooth={true} offset={-120} duration={200} onClick={closeMenu}>Meet our Team</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='contact' spy={true} smooth={true} offset={50} duration={200} onClick={closeMenu}>Contact Us</Link>
+                            <Link to='contact' spy={true} smooth={true} offset={-120} duration={200} onClick={closeMenu}>Contact Us</Link>
                         </li>
                     </ul>
                 </nav>
