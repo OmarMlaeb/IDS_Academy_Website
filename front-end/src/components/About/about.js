@@ -18,7 +18,7 @@ const About = () => {
                 <div className='box'>
                     <i className="fa-solid fa-calendar-days icon2"></i>
                     <h3 className='title_p'>Years of Experience</h3>
-                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                    <VisibilitySensor>
                         {({ isVisible }) => (
                         <div className='counter'>
                             {isVisible ? <CountUp start={0} end={30} duration={1.5} delay={0}/> : null}
@@ -31,7 +31,7 @@ const About = () => {
                 <div className='box'>
                     <i className="fa-solid fa-screwdriver-wrench icon2"></i>
                     <h3 className='title_p'>Developers</h3>
-                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                    <VisibilitySensor>
                         {({ isVisible }) => (
                         <div className='counter'>
                             {isVisible ? <CountUp start={0} end={100} duration={1.5} delay={0}/> : null}
@@ -44,7 +44,7 @@ const About = () => {
                 <div className='box'>
                     <i className="fa-solid fa-list-check icon2"></i>
                     <h3 className='title_p'>Completed Projects</h3>
-                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                    <VisibilitySensor>
                         {({ isVisible }) => (
                         <div className='counter'>
                             {isVisible ? <CountUp start={0} end={1200} duration={1.5} delay={0}/> : null}
@@ -57,7 +57,7 @@ const About = () => {
                 <div className='box'>
                     <i className="fa-solid fa-users icon2"></i>
                     <h3 className='title_p'>Clients</h3>
-                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                    <VisibilitySensor>
                         {({ isVisible }) => (
                         <div className='counter'>
                             {isVisible ? <CountUp start={0} end={2000} duration={1.5} delay={0}/> : null}
