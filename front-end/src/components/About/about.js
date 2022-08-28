@@ -1,59 +1,72 @@
-import React, { useState }from 'react'
+import React from 'react'
 
 import img2 from './../../images/about_img.png';
 import { Link } from 'react-scroll';
 
 import CountUp from 'react-countup';
-import ScrollTrigger from 'react-scroll-trigger';
+
+import VisibilitySensor from 'react-visibility-sensor';
 
 import './about.css';
 
 const About = () => {
 
-    const [counterOn, setCounterOn] = useState(false);
-
     return (
         
         <div className='about' id='about'>
-            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-                <div className='box_container'>
-                    <div className='box'>
-                        <i className="fa-solid fa-calendar-days icon2"></i>
-                        <h3 className='title_p'>Years of Experience</h3>
-                        <span className='counter'>
-                            {counterOn && <CountUp start={0} end={30} duration={1.5} delay={0}/>}
+            <div className='box_container'>
+                <div className='box'>
+                    <i className="fa-solid fa-calendar-days icon2"></i>
+                    <h3 className='title_p'>Years of Experience</h3>
+                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                        {({ isVisible }) => (
+                        <div className='counter'>
+                            {isVisible ? <CountUp start={0} end={30} duration={1.5} delay={0}/> : null}
                             +
-                        </span>
-                    </div>
-
-                    <div className='box'>
-                        <i className="fa-solid fa-screwdriver-wrench icon2"></i>
-                        <h3 className='title_p'>Developers</h3>
-                        <span className='counter'>
-                            {counterOn && <CountUp start={0} end={100} duration={1.5} delay={0}/>}
-                            +
-                        </span>
-                    </div>
-
-                    <div className='box'>
-                        <i className="fa-solid fa-list-check icon2"></i>
-                        <h3 className='title_p'>Completed Projects</h3>
-                        <span className='counter'>
-                            {counterOn && <CountUp start={0} end={1200} duration={1.5} delay={0}/>}
-                            +
-                        </span>
-                    </div>
-
-                    <div className='box'>
-                        <i className="fa-solid fa-users icon2"></i>
-                        <h3 className='title_p'>Clients</h3>
-                        <span className='counter'>
-                            {counterOn && <CountUp start={0} end={2000} duration={1.5} delay={0}/>}
-                            +
-                        </span>
-                    </div>
+                        </div>
+                        )}
+                    </VisibilitySensor>
                 </div>
-            </ScrollTrigger>
+
+                <div className='box'>
+                    <i className="fa-solid fa-screwdriver-wrench icon2"></i>
+                    <h3 className='title_p'>Developers</h3>
+                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                        {({ isVisible }) => (
+                        <div className='counter'>
+                            {isVisible ? <CountUp start={0} end={100} duration={1.5} delay={0}/> : null}
+                            +
+                        </div>
+                        )}
+                    </VisibilitySensor>
+                </div>
+
+                <div className='box'>
+                    <i className="fa-solid fa-list-check icon2"></i>
+                    <h3 className='title_p'>Completed Projects</h3>
+                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                        {({ isVisible }) => (
+                        <div className='counter'>
+                            {isVisible ? <CountUp start={0} end={1200} duration={1.5} delay={0}/> : null}
+                            +
+                        </div>
+                        )}
+                    </VisibilitySensor>
+                </div>
+
+                <div className='box'>
+                    <i className="fa-solid fa-users icon2"></i>
+                    <h3 className='title_p'>Clients</h3>
+                    <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                        {({ isVisible }) => (
+                        <div className='counter'>
+                            {isVisible ? <CountUp start={0} end={2000} duration={1.5} delay={0}/> : null}
+                            +
+                        </div>
+                        )}
+                    </VisibilitySensor>
+                </div>
+            </div>
             <div className='about_container2'>
                 <div className='about_content2'>
                     <p className='font1'>Who We Are</p>
