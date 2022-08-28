@@ -16,32 +16,32 @@ const Contact = () => {
                         <div className='formBox'>
                             <div className='row50'>
                                 <div className='inputBox'>
-                                    <span>First Name</span>
-                                    <input type="text" placeholder="John"></input>
+                                    <span>First Name *</span>
+                                    <input type="text" placeholder="John" required></input>
                                 </div>
 
                                 <div className='inputBox'>
-                                    <span>Last Name</span>
-                                    <input type="text" placeholder="Doe"></input>
+                                    <span>Last Name *</span>
+                                    <input type="text" placeholder="Doe" required></input>
                                 </div>
                             </div>
 
                             <div className='row50'>
                                 <div className='inputBox'>
-                                    <span>Email</span>
-                                    <input type="text" placeholder="johndoe@gmail.com"></input>
+                                    <span>Email *</span>
+                                    <input type="text" placeholder="johndoe@gmail.com" required></input>
                                 </div>
 
                                 <div className='inputBox'>
                                     <span>Mobile Number *</span>
-                                    <input type="text" placeholder="+961 70 528 353"></input>
+                                    <input type="text" placeholder="+961 70 528 353" required></input>
                                 </div>
                             </div>
 
                             <div className='row100'>
                                 <div className='inputBox'>
-                                    <span>Message</span>
-                                    <textarea placeholder="Write your message here..."></textarea>
+                                    <span>Message *</span>
+                                    <textarea placeholder="Write your message here..." required></textarea>
                                 </div>
                             </div>
                                 

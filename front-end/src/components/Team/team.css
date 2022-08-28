@@ -45,6 +45,7 @@ h2, h3, h4 {
     border: 1px solid #fff;
     background-color: #fff;
     border-radius: 15px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
 
 article {
@@ -126,6 +127,7 @@ article h4 {
     margin-left: 20px;
     margin-right: 20px;
     transition: all 0.3s linear;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
 
 .prev:hover, .next:hover {

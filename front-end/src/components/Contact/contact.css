@@ -151,14 +151,3 @@
     color: #fff;
     font-size: 14px;
 }
-
-/* map box */
-.contact .contact_box .content_map{
-    border: 1px solid #000;
-    height: 205px;
-    width: 350px;
-    margin-left: 1020px;
-    margin-top: 10px;
-    background-color: #fff;
-    padding: 0;
-}

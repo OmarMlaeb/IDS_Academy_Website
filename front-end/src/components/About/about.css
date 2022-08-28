@@ -101,10 +101,12 @@
     align-items: center;
     margin-left: 920px;
     margin-top: -420px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
 
 .img_container2 .img2 img{
     height: 390px;
     width: 580px;
     cursor: auto;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
