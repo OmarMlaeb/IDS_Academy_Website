@@ -24,9 +24,15 @@ const Header = () => {
                     </div>
 
                     <div className='social'>
-                        <i className="fa-brands fa-square-facebook icon"></i>
-                        <i className='fa-brands fa-square-instagram icon'></i>
-                        <i className='fa-brands fa-linkedin icon'></i>
+                        <a href="https://www.facebook.com/IDS.com.lb">
+                            <i className="fa-brands fa-square-facebook icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/idssolutions/">
+                            <i className='fa-brands fa-square-instagram icon'></i>
+                        </a>
+                        <a href="https://lb.linkedin.com/company/idssolutions">
+                            <i className='fa-brands fa-linkedin icon'></i>
+                        </a>
                     </div>
                 </div>
             </div>
