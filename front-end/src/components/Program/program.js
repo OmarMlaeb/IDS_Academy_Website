@@ -43,7 +43,7 @@ const Program = () => {
                     <p className='form1'>4</p>
                     <label className='font1'>Project Description:</label>
                     <TextareaAutosize className='form1' editable = {false} value = {description}></TextareaAutosize>
-                    <button href='program' className='button'>
+                    <button className='button'>
                         Register Here
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>

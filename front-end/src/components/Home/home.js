@@ -16,12 +16,12 @@ const Home = () => {
                         <p className='font2'>August 2022</p>
                         <p className='font3'>Long before you sit down to put the pen</p>
                         <p className='font3'>need to make sure you breathe</p>
-                        <button href='/' className='button'>Join Our Program</button>
+                        <button className='button'>Join Our Program</button>
                     </div>
                 </div>
                 <div className='img_container'>
                     <div className='img'>
-                        <Link to='/'>
+                        <Link to='home'>
                             <img src={img} alt=""/>
                         </Link>
                     </div>
@@ -39,7 +39,7 @@ const Home = () => {
                     <p className='font4'>- Good time-management skills</p>
                     <p className='font4'>- Experience with React</p>
                     <p className='font4'>- Experience with HTML / CSS</p>
-                    <button href='/' className='button2'>Explore More</button>
+                    <button className='button2'>Explore More</button>
                 </div>
             </div>
         </div>
